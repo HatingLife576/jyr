@@ -1,45 +1,137 @@
 <html>
   <head>
     <title>Jyr</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+  font-family: labial;
+      height: 100%;
+}
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./style.css">
-    
-    <!-- import the webpage's client-side javascript file -->
-    <script src="./client.js" defer></script>
+@font-face{
+  font-family: labial;
+  src: url(https://cdn.glitch.com/e769f97d-86fc-4b3b-ac75-582f0ea9b98c%2Fnational-park.regular.otf?1556076578811);
+}
+
+#nav{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.lmao{
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 50px;
+  vertical-align: text-top;
+}
+
+img.logo{
+  width: 15%;
+}
+
+li{
+  display: inline-block;
+}
+
+a.button{
+  background: linear-gradient(-45deg, #2d0b13, #640872, #4c0313, #721d7f);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+  padding: 10px;
+  font-size: 30px;
+  border: 2px solid;
+  border-radius: 25px;
+  color: white;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-decoration: none;
+}
+
+#super{
+  top:0px;
+  left:0px;
+  position: absolute;
+  width: 100%;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+#title span {
+  background: -webkit-linear-gradient(black, #470716);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+      
+      #footer{
+        vertical-align: bottom;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div class="outer">
-      <div class="nav">
-        <button style="butt" onclick="creatorHome()">
-          The person behind these OS's
-        </button>
-        <button style="butt" onclick="aboutJyr()">
-          About the Jyr family of OS's
-        </button>
-        <!-- 
-        <button style="butt" onclick="ourTeam()">
-          Our Team
-        </button>
-        -->
+    <div id="super">
+      <div id="nav">
+        <img src="https://cdn.glitch.com/bae32792-9ee9-48cd-b67d-856da6cd6ea8%2Fjyr2.png?1555702093123" class="logo lmao">
+        <h3 class="lmao">
+          The operating systems for all needs
+        </h3>
+        <ul>
+          <li><a class="button" href="https://vyxos.5lt.dev">Vyx</a></li>
+        </ul>
       </div>
-      <div class="areaOne" id="5LT">
-        <img src="https://cdn.glitch.com/6c4c63e6-8a11-4f92-8209-0d6e0b4ab36e%2F5lt.png?1555527833535" class="logo"><h1 class="5lt">
-          Another project by 5LT
-        </h1> 
+      <div id="outer">
+        <div id="title">
+          <span>
+          Jyr is a family of operating sytems that either run with the not-yet-made Jyr kernel or the Linux kernel. The family includes Vyx, Dyr, and Jya, with more coming soon. Jyr was built to be simply with ease in mind. Jyr also wants better ways to be awesome. We have plenty of OS's but not enough creativity in them, not enough ideas to make them all more than the same things with different skins
+        </span>
+        </div>
       </div>
-      <div class="areaTwo" id="aboutJyr">
-        <img class="jyrLogo" src="https://cdn.glitch.com/bae32792-9ee9-48cd-b67d-856da6cd6ea8%2Fjyr2.png?1555702093123">
-        <p>
-          Jyr is a family of operating sytems that either run with the not-yet-made Jyr kernel or the Linux kernel. The family includes Vyx, Dyr, and Jya, with more coming soon. Jyr was built to be simply with ease in mind. Jyr also wants better ways to be awesome. We have plenty of OS's but not enough creativity in them, not enough ideas to make them all more than the same things with different skins. <a href="./family.html">Look at the family of operating systems</a>
-        </p>
+      <div id="footer">
+        <span>
+          Made by 5LT
+        </span>
       </div>
-      <p>
-        More will be put here in the future
-      </p>
     </div>
   </body>
 </html>
